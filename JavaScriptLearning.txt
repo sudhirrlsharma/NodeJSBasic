@@ -1,0 +1,44 @@
+Clearing the javascript concept
+============================================
+Object creation
+module.exports = function(){
+  this.getList = function(){
+    console.log('fetching the list');
+  }
+}
+
+OR
+
+module.exports = function(){
+  this.getList = function(){
+    console.log('fetching the list');
+  }
+}
+
+
+Instantiate by new key ward
+var daoService = require('./dao0.js')
+var dao = new daoService();
+dao.getList();
+
+
+
+Instantiate Without new It will gives the Error but why 
+var daoService = require('./dao0.js')
+var dao = new daoService();
+dao.getList();
+
+
+
+module.exports = {
+  getList : function(){
+    console.log('fetching the list');
+  }
+}
+
+No need for new key ward, because object are created by literal
+var daoService = require('./dao')
+daoService.getList();
+
+Which one is best?
+Based on requirment, if your object need data from outside to initialize some thing for for function else literal

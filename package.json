@@ -1,0 +1,14 @@
+{
+  "name": "OOPSJavaScript",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Sudhir Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.2.0"
+  }
+}
